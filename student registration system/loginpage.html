@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .login {
+            background-color: white;
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+
+        <h1>Student Login</h1>
+
+        <form>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter your password">
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>
+            New student?
+            <a href="http://127.0.0.1:3000/register.html">Register here</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
