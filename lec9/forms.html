@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galgotias University — Admission Form</title>
+<style>
+  body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSCLOVhdmIkZAruetSPnCkPgz3-a8M9Mf4i15vTO0aDuFnBoXsxtRCodg&s=10');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  form{
+    background: rgba(255,255,255,0.9);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;color:white;">Galgotias University</h1>
+<h3 style="text-align:center;color:white;">Student Admission Form</h3>
+
+<form>
+
+  <fieldset>
+    <legend>Personal details</legend>
+
+    <label for="fname">Full name</label><br>
+    <input type="text" id="fname" name="fname" required><br><br>
+
+    <label for="dob">Date of birth</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="other"> Other
+    <br><br>
+
+    <label for="father">Father's / Guardian's name</label><br>
+    <input type="text" id="father" name="father"><br><br>
+
+    <label for="mother">Mother's name</label><br>
+    <input type="text" id="mother" name="mother"><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact information</legend>
+
+    <label for="phone">Mobile number</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+    <label for="email">Email address</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="address">Correspondence address</label><br>
+    <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Academic details</legend>
+
+    <label for="course">Course applying for</label><br>
+    <select id="course" name="course" required>
+      <option value="">Select a course</option>
+      <option>B.Tech — Computer Science &amp; Engineering</option>
+      <option>B.Tech — Mechanical Engineering</option>
+      <option>BBA</option>
+      <option>BCA</option>
+      <option>B.Com (Hons)</option>
+      <option>MBA</option>
+      <option>M.Tech</option>
+    </select><br><br>
+
+    <label for="board">Qualifying board / university</label><br>
+    <input type="text" id="board" name="board"><br><br>
+
+    <label for="percent">Percentage / CGPA obtained</label><br>
+    <input type="text" id="percent" name="percent"><br><br>
+
+    <label for="year">Year of passing</label><br>
+    <input type="number" id="year" name="year" min="2000" max="2026"><br><br>
+  </fieldset>
+
+  <label>
+    <input type="checkbox" id="declare" name="declare" required>
+    I declare that the information provided above is true to the best of my knowledge.
+  </label>
+  <br><br>
+
+  <button type="reset">Clear form</button>
+  <button type="submit">Submit application</button>
+
+</form>
+
+</body>
+</html>
