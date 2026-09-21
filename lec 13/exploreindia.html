@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explore India</title>
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+}
+
+.banner {
+  background-color: #1f6f8b;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.banner p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: #6b3fa0;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #5a2f8f;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sidebar-left {
+  float: left;
+  width: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.sidebar-left h2 {
+  font-size: 22px;
+}
+
+.sidebar-left li {
+  margin-bottom: 15px;
+}
+
+.sidebar-left a {
+  color: #1a5fd6;
+}
+
+.content {
+  float: left;
+  width: 55%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.content .box {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.sidebar-right {
+  float: left;
+  width: 25%;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.sidebar-right h2 {
+  font-size: 22px;
+}
+
+.sidebar-right li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 700px) {
+  .sidebar-left, .content, .sidebar-right {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <h1>Explore India</h1>
+  <p>Discover the rich cultural heritage and historical landmarks of India</p>
+</div>
+
+<div class="navbar">
+  <a href="#redfort">RedFort</a>
+  <a href="#indiagate">IndiaGate</a>
+  <a href="#kutubminar">KutubMinar</a>
+  <a href="#gatewayofindia">GatewayofIndia</a>
+</div>
+
+<div class="container">
+
+  <div class="sidebar-left">
+    <h2>Explore India</h2>
+    <ul>
+      <li><a href="#redfort">RedFort</a></li>
+      <li><a href="#indiagate">IndiaGate</a></li>
+      <li><a href="#kutubminar">KutubMinar</a></li>
+      <li><a href="#gatewayofindia">GatewayofIndia</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="box" id="redfort">
+      <h2>Red Fort</h2>
+      <p>The Red Fort is a UNESCO World Heritage Site located in Delhi, India. It was built by the Mughal Emperor Shah Jahan in 1638 and served as the main residence of the Mughal emperors for nearly 200 years. The fort is known for its stunning architecture and historical significance.</p>
+    </div>
+
+    <div class="box" id="indiagate">
+      <h2>India Gate</h2>
+      <p>India Gate is a war memorial located in New Delhi, India. It was built in 1931 and is dedicated to the soldiers of the British Indian Army who died in World War I.</p>
+    </div>
+
+    <div class="box" id="kutubminar">
+      <h2>Kutub Minar</h2>
+      <p>Kutub Minar is a tall brick minaret located in Delhi, India. It was built in 1193 by Qutb-ud-din Aibak and is a great example of Indo-Islamic architecture.</p>
+    </div>
+
+    <div class="box" id="gatewayofindia">
+      <h2>Gateway of India</h2>
+      <p>The Gateway of India is a famous monument built in Mumbai in 1924. It was built to welcome King George V and Queen Mary and overlooks the Arabian Sea.</p>
+    </div>
+  </div>
+
+  <div class="sidebar-right">
+    <h2>Visit Guidelines</h2>
+    <ul>
+      <li>Carry a valid ID proof.</li>
+      <li>Follow the visiting hours.</li>
+      <li>Do not touch the old carvings.</li>
+      <li>Photography may not be allowed everywhere.</li>
+      <li>Dress properly while visiting.</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; Tourism Portal</p>
+</footer>
+
+</body>
+</html>
