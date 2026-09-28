@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Variable</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 48px 20px;
+            background: #edf3f1;
+            color: orange;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        h2 {
+            width: min(100%, 620px);
+            margin: 0 auto 16px;
+            color: orangered;
+            font-size: 28px;
+        }
+
+        #result {
+            width: min(100%, 620px);
+            margin: 0 auto;
+            padding: 24px;
+            border: 1px solid #d5e2dd;
+            border-left: 5px solid blue;
+            border-radius: 8px;
+            background: grey;
+            box-shadow: 0 12px 32px rgb(36 67 57 / 9%);
+            font-size: 16px;
+            line-height: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Output</h2>
+
+    <p id="result"></p>
+
+    <script>
+        let name = "Pushkar singh";
+        let age = 20;
+
+        let semester = "5th";
+        let program = "B.Tech CSE";
+        let enrollmentNumber = "24131019";
+
+        let sub1 = 79;
+        let sub2 = 80;
+        let sub3 = 68;
+
+        let totalMarks = sub1 + sub2 + sub3;
+
+        document.getElementById("result").innerHTML =
+            "Name: " + name +
+            "<br>Age: " + age +
+            "<br>Semester: " + semester +
+            "<br>Program: " + program +
+            "<br>Enrollment Number: " + enrollmentNumber +
+            "<br>Subject 1 Marks: " + sub1 +
+            "<br>Subject 2 Marks: " + sub2 +
+            "<br>Subject 3 Marks: " + sub3 +
+            "<br>Total Marks: " + totalMarks;
+    </script>
+
+</body>
+</html>

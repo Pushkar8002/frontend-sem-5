@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Variable</title>
+
+    <style>
+        body {
+            background-color: orange;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .content {
+            border: 2px solid black;
+            padding: 15px;
+            width: 400px;
+            margin: auto;
+        }
+
+        button {
+            display: block;
+            margin: 15px auto;
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student of Galgotias University</h2>
+    <p> Click on the button to see the name of the student </p>
+
+    <button type="button" onclick="myFunction()">Click Me</button>
+
+    <div class="content">
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function myFunction() {
+
+            let name = "Pushkar singh";
+            let age = 20;
+            let semester = "5th";
+            let program = "BTech CSE";
+            let enrollmentNumber = "24131010477";
+
+            let sub1 = 55;
+            let sub2 = 76;
+            let sub3 = 80;
+
+            let totalMarks = sub1 + sub2 + sub3;
+
+            document.getElementById("result").innerHTML =
+                "Name: " + name +
+                "<br>Age: " + age +
+                "<br>Semester: " + semester +
+                "<br>Program: " + program +
+                "<br>Enrollment Number: " + enrollmentNumber +
+                "<br>Subject 1 Marks: " + sub1 +
+                "<br>Subject 2 Marks: " + sub2 +
+                "<br>Subject 3 Marks: " + sub3 +
+                "<br>Total Marks: " + totalMarks;
+        }
+    </script>
+
+</body>
+</html>
